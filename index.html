@@ -4,8 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ArtHouse Jersey AI Playbook</title>
-  <meta name="description" content="A polished playbook for using AI agents and helpers across ArtHouse Jersey: fundraising, programmes, education, operations, and where consultants will help." />
-  <meta name="theme-color" content="#0c1220" />
+  <meta name="description" content="A practical playbook for implementing AI agents and helpers across ArtHouse Jersey: development, programmes, education, operations, governance, and consultant support." />
+  <meta name="theme-color" content="#f5efe5" />
+  <link rel="preconnect" href="https://images.squarespace-cdn.com" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,153 +14,150 @@
 
   <div class="page">
     <header class="hero" id="top">
-      <div class="hero-bar">
-        <div class="brand">
-          <span class="brand-mark">AJ</span>
-          <div>
-            <p>ArtHouse Jersey</p>
-            <strong>AI playbook</strong>
+      <div class="masthead">
+        <a class="brand" href="#top" aria-label="ArtHouse Jersey AI Playbook home">
+          <img src="assets/logo-long.png" alt="ArtHouse Jersey" class="brand-logo" />
+          <div class="brand-copy">
+            <span>AI playbook</span>
+            <strong>ArtHouse Jersey</strong>
           </div>
-        </div>
+        </a>
+
         <nav class="top-nav" aria-label="Primary">
-          <a href="#map">The map</a>
+          <a href="#overview">Overview</a>
           <a href="#helpers">Helpers</a>
           <a href="#consultants">Consultants</a>
-          <a href="#roadmap">90 days</a>
-          <a href="#governance">Guardrails</a>
+          <a href="#sequence">Sequence</a>
+          <a href="#guardrails">Guardrails</a>
         </nav>
       </div>
 
       <div class="hero-grid">
         <section class="hero-copy">
-          <p class="eyebrow">For Sam’s first 90 days as Head of Development</p>
-          <h1>A playbook for using AI agents and helpers across the whole charity.</h1>
-          <p class="lede">This is a practical, human-led operating model for ArtHouse Jersey: use AI to reduce admin, accelerate fundraising, improve service, and help the team move faster — while keeping judgement, tone, and relationships firmly in-house.</p>
+          <p class="eyebrow">A practical operating model for the charity</p>
+          <h1>Use AI to help ArtHouse Jersey move faster, stay consistent, and keep the human voice intact.</h1>
+          <p class="lede">This playbook shows how small AI agents and helpers can support development, programme delivery, education, communications, operations, and governance — without outsourcing judgement, taste, or relationships.</p>
 
-          <div class="hero-actions">
-            <a class="button primary" href="#map">Start with the operating model</a>
-            <a class="button secondary" href="#helpers">See the helper map</a>
-            <a class="button secondary" href="#consultants">Where consultants help</a>
-          </div>
-
-          <div class="hero-facts" aria-label="Core principles">
+          <div class="hero-metrics" aria-label="Core principles">
             <div>
-              <span>Approach</span>
-              <strong>Small, useful helpers</strong>
+              <span>Purpose</span>
+              <strong>Reduce admin and repeat work</strong>
             </div>
             <div>
               <span>Ownership</span>
-              <strong>Staff keep the final word</strong>
+              <strong>Every helper has a staff owner</strong>
             </div>
             <div>
-              <span>Consultants</span>
-              <strong>Design, integration, assurance</strong>
+              <span>Support</span>
+              <strong>Consultants design, connect, and hand over</strong>
             </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#overview">See the operating model</a>
+            <a class="button secondary" href="#helpers">Explore the helper map</a>
           </div>
         </section>
 
-        <aside class="hero-visual" aria-label="System overview illustration">
-          <div class="glass-note note-a">Supporter care</div>
-          <div class="glass-note note-b">Development</div>
-          <div class="glass-note note-c">Programmes</div>
-          <div class="glass-note note-d">Operations</div>
-
-          <div class="orb orb-a"></div>
-          <div class="orb orb-b"></div>
-          <div class="orb orb-c"></div>
-
-          <div class="system-card system-top">
-            <span>Public surface</span>
-            <strong>Website, newsletter, events, enquiries</strong>
-          </div>
-          <div class="system-card system-mid-left">
-            <span>AI helpers</span>
-            <strong>Draft, route, summarise, tag, remind</strong>
-          </div>
-          <div class="system-card system-mid-right">
-            <span>Shared knowledge</span>
-            <strong>Policies, programme history, donor notes, FAQs</strong>
-          </div>
-          <div class="system-card system-bottom-left">
-            <span>Systems</span>
-            <strong>CRM, calendar, drive, email, booking, tickets</strong>
-          </div>
-          <div class="system-card system-bottom-right">
-            <span>Governance</span>
-            <strong>Approvals, access, tone, rights, records</strong>
-          </div>
-
-          <div class="system-hub">
-            <div class="hub-ring"></div>
-            <div class="hub-core">AI<br />helpers</div>
+        <aside class="hero-visual" aria-label="ArtHouse Jersey visual collage">
+          <figure class="visual-card visual-card-wide">
+            <img src="assets/art-in-arches.jpg" alt="ArtHouse Jersey programme image" />
+            <figcaption>Public-facing programming and campaign output</figcaption>
+          </figure>
+          <figure class="visual-card">
+            <img src="assets/collins-pop-up.jpg" alt="ArtHouse Jersey exhibition image" />
+            <figcaption>Exhibitions and events that need fast, accurate copy</figcaption>
+          </figure>
+          <figure class="visual-card">
+            <img src="assets/manwatching.png" alt="ArtHouse Jersey live culture image" />
+            <figcaption>Tickets, audience support, and event communication</figcaption>
+          </figure>
+          <div class="visual-note">
+            <p class="visual-note-label">What AI should do</p>
+            <strong>Draft, route, summarise, retrieve, and verify — then hand the final call back to staff.</strong>
           </div>
         </aside>
       </div>
     </header>
 
     <main id="content">
-      <section id="map" class="section section-map">
+      <section id="overview" class="section section-overview reveal-block">
         <div class="section-head">
           <p class="kicker">Start here</p>
-          <h2>The one-minute map</h2>
-          <p>ArtHouse Jersey already works across public programme, learning, support, venues, and opportunities. AI should sit behind those layers and make each one easier to run — never replace the organisational voice or the final human decision.</p>
+          <h2>The operating model in one glance</h2>
+          <p>ArtHouse Jersey already works across public programme, learning, support, venues, and opportunities. AI should sit behind those layers and make them easier to run — never replace the organisation’s voice or final human decision.</p>
         </div>
 
-        <div class="map-grid">
-          <article class="map-card">
-            <p class="map-label">1 · Public programme</p>
+        <div class="overview-grid">
+          <article class="overview-card">
+            <p class="overview-label">Public programme</p>
             <h3>Help people discover, understand, and book.</h3>
-            <p>Use AI to tidy event descriptions, answer common questions, suggest routes through the season, and keep the website / newsletter / social copy aligned.</p>
+            <p>Use AI to draft event pages, align newsletter and social copy, answer common audience questions, and surface the right calls to action.</p>
           </article>
-          <article class="map-card">
-            <p class="map-label">2 · Development</p>
-            <h3>Turn research into better asks and better stewardship.</h3>
-            <p>Use AI to prepare donor briefs, prospect lists, meeting notes, funding proposals, thank-yous, reporting drafts, and relationship prompts.</p>
+          <article class="overview-card">
+            <p class="overview-label">Development</p>
+            <h3>Turn research into stronger asks and better stewardship.</h3>
+            <p>Use AI to prepare donor briefs, prospect lists, meeting notes, funding drafts, thank-yous, and reporting skeletons.</p>
           </article>
-          <article class="map-card">
-            <p class="map-label">3 · Education and participation</p>
-            <h3>Make learning materials faster to produce and easier to reuse.</h3>
-            <p>Turn exhibitions and projects into workshop packs, captions, accessibility copy, session outlines, and repeatable activity templates.</p>
+          <article class="overview-card">
+            <p class="overview-label">Education</p>
+            <h3>Turn one exhibition into many usable assets.</h3>
+            <p>Use AI to create workshop packs, captions, accessibility copy, session outlines, and repeatable learning templates.</p>
           </article>
-          <article class="map-card">
-            <p class="map-label">4 · Operations</p>
+          <article class="overview-card">
+            <p class="overview-label">Operations</p>
             <h3>Reduce the hidden admin that slows everything down.</h3>
-            <p>Use AI to summarise meetings, answer policy questions, organise internal knowledge, draft procedures, and keep actions moving between teams.</p>
+            <p>Use AI to summarise meetings, answer policy questions, organise internal knowledge, and keep actions moving between teams.</p>
           </article>
+        </div>
+
+        <div class="context-strip" aria-label="ArtHouse Jersey context images">
+          <figure>
+            <img src="assets/art-in-arches.jpg" alt="ArtHouse Jersey programme" />
+            <figcaption>Programme and audience communications</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/collins-pop-up.jpg" alt="ArtHouse Jersey exhibition" />
+            <figcaption>Exhibitions, artists, and quick-turn publishing</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/manwatching.png" alt="ArtHouse Jersey live event" />
+            <figcaption>Events, bookings, and supporter contact</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-principles reveal-block">
         <div class="section-head narrow">
           <p class="kicker">What changes</p>
           <h2>If you only change four things, change these.</h2>
         </div>
 
-        <div class="four-up">
-          <article class="point-card">
-            <span class="point-index">01</span>
+        <div class="principles-grid">
+          <article class="principle-card">
+            <span>01</span>
             <h3>From blank pages to first drafts</h3>
             <p>Let AI get to version one quickly for bids, copy, notes, emails, and internal documents — then staff refine the substance.</p>
           </article>
-          <article class="point-card">
-            <span class="point-index">02</span>
+          <article class="principle-card">
+            <span>02</span>
             <h3>From memory loss to a working memory</h3>
             <p>Capture recurring decisions, preferences, and project history so the team does not keep rediscovering the same answers.</p>
           </article>
-          <article class="point-card">
-            <span class="point-index">03</span>
+          <article class="principle-card">
+            <span>03</span>
             <h3>From ad hoc help to repeatable helpers</h3>
-            <p>Build a small set of named assistants, each with one job: development, programmes, comms, operations, supporter care.</p>
+            <p>Build a small set of named assistants, each with one job: development, programmes, comms, operations, and supporter care.</p>
           </article>
-          <article class="point-card">
-            <span class="point-index">04</span>
+          <article class="principle-card">
+            <span>04</span>
             <h3>From consultant dependence to transfer</h3>
             <p>Use consultants to design and launch the system, then hand the day-to-day running back to ArtHouse Jersey with confidence.</p>
           </article>
         </div>
       </section>
 
-      <section id="helpers" class="section">
+      <section id="helpers" class="section reveal-block">
         <div class="section-head">
           <p class="kicker">The helper map</p>
           <h2>The first agents and assistants to build</h2>
@@ -182,7 +180,7 @@
               <span>Governance</span>
             </div>
             <h3>Development intelligence assistant</h3>
-            <p class="helper-use">Prepares board / donor briefs, tracks prospects, remembers relationship history, and summarises meetings into actions.</p>
+            <p class="helper-use">Prepares donor briefs, tracks prospects, remembers relationship history, and summarises meetings into actions.</p>
             <p class="helper-note"><strong>Consultants help:</strong> shape the data model, connect the CRM, and set the approval flow for sensitive donor information.</p>
           </article>
 
@@ -258,7 +256,7 @@
         </div>
       </section>
 
-      <section id="consultants" class="section consultants-section">
+      <section id="consultants" class="section consultants-section reveal-block">
         <div class="section-head narrow">
           <p class="kicker">Where consultants help</p>
           <h2>Use outside help for the hard parts — then keep the everyday value in-house.</h2>
@@ -271,7 +269,7 @@
             <h3>Design the operating model</h3>
             <p>Run a short discovery sprint to identify the highest-value tasks, data sources, approval steps, and staff roles. This is where outside expertise is most useful.</p>
             <ul>
-              <li>Map all recurring work across development, programmes, comms, and operations.</li>
+              <li>Map recurring work across development, programmes, comms, and operations.</li>
               <li>Decide what should be automated, assisted, or always manual.</li>
               <li>Agree tone, rights, privacy, and risk boundaries.</li>
             </ul>
@@ -312,38 +310,34 @@
         </div>
       </section>
 
-      <section id="roadmap" class="section roadmap-section">
+      <section id="sequence" class="section reveal-block">
         <div class="section-head">
-          <p class="kicker">90-day rollout</p>
+          <p class="kicker">Implementation sequence</p>
           <h2>Build trust first, then speed.</h2>
-          <p>The first three months should create visible wins and clear habits, not a sprawling technology project.</p>
+          <p>The rollout should produce visible wins, clear habits, and shared ownership — not a sprawling technology project.</p>
         </div>
 
-        <div class="roadmap">
-          <article class="roadmap-card">
-            <p class="roadmap-phase">Weeks 1–2</p>
-            <h3>Find the best starting points</h3>
-            <p>Interview staff, review current workflows, and choose 3–4 jobs that are repetitive, high-volume, and low-risk enough to automate or assist first.</p>
+        <div class="sequence-grid">
+          <article class="sequence-card">
+            <h3>1. Discover the highest-value tasks</h3>
+            <p>Interview staff, review current workflows, and choose the repetitive, high-volume jobs that are safe enough to assist first.</p>
           </article>
-          <article class="roadmap-card">
-            <p class="roadmap-phase">Weeks 3–6</p>
-            <h3>Ship the first two helpers</h3>
-            <p>Launch one internal helper for development / ops and one public-facing helper for FAQs or event support. Keep the scope narrow and measurable.</p>
+          <article class="sequence-card">
+            <h3>2. Define the helper roles</h3>
+            <p>Write one clear job description per helper so each assistant has one owner, one purpose, and one boundary.</p>
           </article>
-          <article class="roadmap-card">
-            <p class="roadmap-phase">Weeks 7–10</p>
-            <h3>Connect the knowledge base</h3>
-            <p>Create a small shared source of truth for policies, programme history, FAQs, and standard copy so the helpers can answer from the same material.</p>
+          <article class="sequence-card">
+            <h3>3. Connect the knowledge base</h3>
+            <p>Create a small shared source of truth for policies, programme history, FAQs, and standard copy so helpers answer from the same material.</p>
           </article>
-          <article class="roadmap-card">
-            <p class="roadmap-phase">Weeks 11–13</p>
-            <h3>Hand over and expand</h3>
-            <p>Document the workflow, train the owners, review the outputs, and decide which next helper deserves to be added — usually education or fundraising next.</p>
+          <article class="sequence-card">
+            <h3>4. Train, test, and transfer</h3>
+            <p>Review examples with staff, refine the outputs, document the workflow, and make the system maintainable without outside heroics.</p>
           </article>
         </div>
       </section>
 
-      <section id="governance" class="section governance-section">
+      <section id="guardrails" class="section reveal-block">
         <div class="section-head narrow">
           <p class="kicker">Guardrails</p>
           <h2>The rules that keep AI useful.</h2>
@@ -351,37 +345,37 @@
 
         <div class="governance-grid">
           <article class="governance-card">
-            <h3>1. Human approval for public voice</h3>
+            <h3>Human approval for public voice</h3>
             <p>Anything that changes the organisation’s tone, promise, or public position gets reviewed by a person before it leaves the building.</p>
           </article>
           <article class="governance-card">
-            <h3>2. Sensitive data stays controlled</h3>
+            <h3>Sensitive data stays controlled</h3>
             <p>Donor details, staff data, safeguarding matters, and restricted documents should only be exposed to helpers that are explicitly approved for that purpose.</p>
           </article>
           <article class="governance-card">
-            <h3>3. Every helper has an owner</h3>
+            <h3>Every helper has an owner</h3>
             <p>Each assistant needs one named staff owner, a clear job, and a stop button. No orphaned automations.</p>
           </article>
           <article class="governance-card">
-            <h3>4. Keep a source of truth</h3>
+            <h3>Keep a source of truth</h3>
             <p>When an answer matters, the helper should cite the underlying policy, document, or page so staff can verify it quickly.</p>
           </article>
           <article class="governance-card">
-            <h3>5. Start where the pain is obvious</h3>
+            <h3>Start where the pain is obvious</h3>
             <p>Pick jobs that waste time every week. If the team does not feel the benefit, the system will not survive.</p>
           </article>
           <article class="governance-card">
-            <h3>6. Measure adoption, not just ambition</h3>
+            <h3>Measure adoption, not just ambition</h3>
             <p>Track time saved, fewer repeated questions, faster first drafts, and staff confidence. That is the real evidence that the tools are working.</p>
           </article>
         </div>
       </section>
 
-      <section class="section closing-cta">
+      <section class="section closing-cta reveal-block">
         <div>
           <p class="kicker">Bottom line</p>
           <h2>Use AI to make the charity faster, calmer, and more consistent — without outsourcing its judgement.</h2>
-          <p>This playbook gives Sam a credible way to start: small helpers, clear ownership, targeted consultant support, and a rollout that builds trust before scale.</p>
+          <p>This playbook gives ArtHouse Jersey a credible way to start: small helpers, clear ownership, targeted consultant support, and a rollout that builds trust before scale.</p>
         </div>
         <a class="button primary" href="#top">Back to the top</a>
       </section>

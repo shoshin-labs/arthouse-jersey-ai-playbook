@@ -40,9 +40,8 @@ if ('IntersectionObserver' in window && sections.length) {
   sections.forEach(section => observer.observe(section));
 }
 
-const revealTargets = document.querySelectorAll('.section, .map-card, .helper-card, .consultant-card, .roadmap-card, .governance-card, .point-card');
+const revealTargets = document.querySelectorAll('.reveal-block, .overview-card, .principle-card, .helper-card, .consultant-card, .sequence-card, .governance-card');
 if ('IntersectionObserver' in window) {
-  revealTargets.forEach(el => el.classList.add('reveal'));
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -50,7 +49,9 @@ if ('IntersectionObserver' in window) {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.14 });
 
   revealTargets.forEach(el => revealObserver.observe(el));
+} else {
+  revealTargets.forEach(el => el.classList.add('in-view'));
 }
