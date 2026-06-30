@@ -6,6 +6,8 @@ const navLinks = Array.from(document.querySelectorAll('.top-nav a'));
 const sections = navLinks
   .map(link => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
+const scrollFill = document.querySelector('.scroll-meter__fill');
+const scrollValue = document.querySelector('[data-scroll-value]');
 
 function setFilter(filter) {
   filterButtons.forEach(button => {
@@ -55,3 +57,16 @@ if ('IntersectionObserver' in window) {
 } else {
   revealTargets.forEach(el => el.classList.add('in-view'));
 }
+
+function updateScrollMeter() {
+  if (!scrollFill || !scrollValue) return;
+  const doc = document.documentElement;
+  const maxScroll = doc.scrollHeight - window.innerHeight;
+  const progress = maxScroll > 0 ? Math.min(100, Math.max(0, (window.scrollY / maxScroll) * 100)) : 100;
+  scrollFill.style.width = `${progress}%`;
+  scrollValue.textContent = `${Math.round(progress)}%`;
+}
+
+updateScrollMeter();
+window.addEventListener('scroll', updateScrollMeter, { passive: true });
+window.addEventListener('resize', updateScrollMeter);
